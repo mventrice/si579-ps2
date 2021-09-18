@@ -1,0 +1,109 @@
+html {
+    font-family:"Urbanist", sans-serif;
+    font-weight: 300
+}
+
+body {
+    margin:0px;
+}
+
+a {
+    color: rgb(9,1,133)
+}
+
+a:hover {    
+    color: rgb(168, 18, 118);}
+
+img {
+    max-width:100%
+}
+
+main {
+padding-left:16px;
+padding-right:16px;
+}
+
+header {
+    background: rgb(9,1,133);
+    background: linear-gradient(180deg, rgba(9,1,133,1) 0%, rgba(19,19,193,1) 39%, rgba(0,212,255,1) 100%);
+    display: block;
+    margin-top:0;
+    height: 140px;
+}
+
+h1 {
+    font-weight:600;
+}
+
+nav{
+    padding-top:40px
+
+}
+nav a {
+    text-decoration:none;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing:2px;
+}
+
+nav a:hover {
+    color: rgb(230, 205, 65);
+}
+
+.width-700 {
+    margin:auto;
+    width:700px;
+    max-width: 100%
+}
+
+.no-list-style {
+    list-style: none;;
+}
+
+footer {
+    background-color: rgb(31, 31, 31);
+    color: #fff;
+    margin-top: 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#blueberry-list li {
+    margin-bottom: 1em;
+    list-style: none;
+}
+
+#blueberry-list li::before {
+    content: "\2022";
+    color:rgba(9,1,133,1);
+    font-size: 1.5em;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/*********LIGHT/DARK MODE************/
+
+.light {
+    background: #fff; 
+    color: rgb(31, 31, 31)}
+
+@media (prefers-color-scheme:dark) {
+    .dark {
+        background-color:rgb(27, 27, 27);
+        color: #fff;
+    }
+
+    a {
+        color:rgb(230, 205, 65)
+    }
+
+    footer {
+        background-color:rgb(9,1,133)
+    }
+}
+
+
